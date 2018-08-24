@@ -3,13 +3,15 @@ http server is used for local hosting(http-server).
 sketch.js contains the original javaScript code.
 JSON file is is included in JS file and JSON data is contained in a function called getPokemon.
 
-1. 
+1. Function to take pokemon’s name as argument and display the information of that pokemon STARTS HERE
+
 step 1: In first function we are getting the information of the pokemon by just entering the name of the pokemon.
 		Name is passed via argument, then a loop is run through all the json data.
 step 2: An if condition is checked for the name entered by the user, whether the name is true or false.
 step 3: If name is is true then information is shown in alert.
 
-2.
+2.Function that takes pokemon’s name as an argument and find out which all pokemon have that name in their “next_evolution” field STARTS HERE.
+
 step 1: same as function 1. Also an empty array is used(evolutionArray) to store the fetched data.
 step 2:'hasOwnProperty' is checked for JSON data because every pokemon data does not contain next_evolution field.
 step 3: Now we loop through the next_evolution array.
@@ -18,7 +20,7 @@ step 5: Then the fetched data is pushed into the evolutionArray.
 step 6: Now a condition is checked whether the evolutionArray is empty or not.
 step 7: Then the results are shown as per users demand.  
 
-3.
+3. Write a function that take a “Weakness” as an input and gives the names of all pokemon who have that Weakness. 
 step 1 and step 2 are same except the weakness property is checked by 'hasOwnProperty'.
 step 3: fetched items are pushed in array.
 step 4: if weakness is found in weakness array, then print.
